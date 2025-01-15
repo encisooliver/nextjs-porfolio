@@ -7,8 +7,8 @@ const Navbar = () => {
   return (
     <header className={`flex w-full items-center bg-white dark:bg-dark`}>
       <div className="container">
-        <div className="relative -mx-4 flex items-center justify-between">
-          <div className="w-40 max-w-full px-4">
+        <div className="relative flex items-center justify-between">
+          <div className="max-w-full px-4">
             <a href="/#" className="block w-full py-5">
               <img
                 src="/logo.png"
@@ -39,9 +39,9 @@ const Navbar = () => {
                 } `}
               >
                 <ul className="text-gray-500 block lg:flex">
-                  {/* <ListItem NavLink="/porfolio">Porfolio</ListItem> */}
-                  <ListItem NavLink="/skills">Skills</ListItem>
                   <ListItem NavLink="/projects">Projects</ListItem>
+                  <ListItem NavLink="/projects">Services</ListItem>
+                  <ListItem NavLink="/skills">Skills</ListItem>
                   <ListItem NavLink="/contact">Contact</ListItem>
                 </ul>
               </nav>
