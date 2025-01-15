@@ -24,3 +24,13 @@ body {
 .h-btn {
   background-color: gray;
 }
+
+.container{
+  min-width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.m-100 {
+  margin-top: -135px !important;
+}
