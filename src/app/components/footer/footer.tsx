@@ -2,14 +2,14 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-8">
+    <footer className="bg-black text-white py-8 px-7">
       <div className="container mx-auto px-6">
         {/* Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
           {/* Column 1: Logo/Brand */}
           <div className="flex flex-col items-start">
-            <h2 className="text-2xl font-bold">My Brand</h2>
-            <p className="text-gray-400 mt-2">Empowering your digital presence.</p>
+            <h2 className="text-2xl font-bold">OLIVER</h2>
+            <p className="text-gray-400 mt-2">SOFTWARE ENGINEER</p>
           </div>
 
           {/* Column 2: Navigation Menu */}
@@ -18,17 +18,12 @@ const Footer = () => {
               <ul className="space-y-2">
                 <li>
                   <Link href="/">
-                    <span className="hover:text-gray-300">Home</span>
+                    <span className="hover:text-gray-300">Projects</span>
                   </Link>
                 </li>
                 <li>
                   <Link href="/">
-                    <span className="hover:text-gray-300">About</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/">
-                    <span className="hover:text-gray-300">Services</span>
+                    <span className="hover:text-gray-300">Skills</span>
                   </Link>
                 </li>
                 <li>
