@@ -1,33 +1,37 @@
 import React from 'react';
+import { useState } from 'react';
 
 export default function Skills() {
+  const images = [
+    "/rust.png",
+    "/substrate-framework.png",
+    "/ink.png",
+    "/nodejs.png",
+    "/fastify.png",
+    "/nestjs.png",
+    "/expressjs.png",
+    "/angular.png",
+    "/ionic.png",
+    "/aspdotnet.jpeg",
+    "/laravel.png",
+    "/ionic.png",
+  ];
   return (
-    <div className="min-h-screen bg-white py-10">
-      <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-center text-gray-800 mb-6">Skills</h1>
-        <div className="bg-white shadow-md rounded-lg p-6">
-          <ul className="list-disc list-inside space-y-2 text-gray-700">
-            <li>Angular Framework</li>
-            <li>Typescript</li>
-            <li>CLI</li>
-            <li>IONIC</li>
-            <li>Angular Material / Primeng</li>
-            <li>Laravel Framework</li>
-            <li>Fastify</li>
-            <li>Nestjs</li>
-            <li>ASP.NET MVC</li>
-            <li>C#</li>
-            <li>Linq to SQL</li>
-            <li>Javascript</li>
-            <li>ASP.NET API</li>
-            <li>Winforms</li>
-            <li>SQL (MSSQL, MySQL)</li>
-            <li>Continuous Integration and Continuous Deployment/Delivery</li>
-            <li>Podman | Docker</li>
-            <li>GitHub - Workflow</li>
-          </ul>
+    <section className="overflow-hidden pb-10 pt-20 lg:pt-[120px] lg:pb-[90px] bg-white">
+       <div className="container">
+        <h1 className="text-3xl font-bold text-center mb-8 text-black">Technology Stack</h1>
+        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-4">
+          {images.map((src, index) => (
+            <div key={index} className="relative">
+              <img
+                src={src}
+                alt={`Gallery Image ${index + 1}`}
+                className="object-cover w-full h-full rounded-lg shadow-md"
+              />
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
