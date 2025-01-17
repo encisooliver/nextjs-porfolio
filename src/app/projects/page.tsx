@@ -2,9 +2,7 @@ export default function Projects() {
     return (
       <section className="bg-gray-2 pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px] bg-white">
         <div className="container">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 text-black">
-           <h1>Projects</h1>
-        </div>
+        <h1 className="text-3xl font-bold text-center mb-8 text-black">Projects</h1>
         <br />
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <SingleCard
